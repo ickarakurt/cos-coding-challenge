@@ -3,6 +3,12 @@
  */
 export interface ICarOnSaleClient {
 
-    getRunningAuctions(): Promise<any /* TODO: Introduce a type */>
+    getRunningAuctions(): Promise<[]>
+
+    numberOfrunningAuctions(runningAuctions:[]):number
+
+    calculateAverageBid(runningAuctions:[]):number
+
+    calculateAverageProcess(runningAuctions:[]):number
 
 }
